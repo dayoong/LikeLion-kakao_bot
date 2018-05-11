@@ -65,3 +65,6 @@ class HomeController < ApplicationController
     render json: @result
   end
 end
+
+# rails gem => module 
+# Nokogiri = gem = module
