@@ -15,6 +15,7 @@ gem 'pg', :group => :production
 gem 'rails_12factor', :group => :production
 
 gem 'nokogiri'
+gem 'rest-client'
 
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
