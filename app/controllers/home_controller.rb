@@ -1,4 +1,7 @@
 class HomeController < ApplicationController
+  
+  skip_before_action :verify_authenticity_token
+  
   def keyboard
     @keyboard = {
       :type => "buttons",						# 이렇게 작성해도
