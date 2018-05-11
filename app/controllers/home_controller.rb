@@ -1,12 +1,12 @@
 class HomeController < ApplicationController
   def keyboard
     @keyboard = {
-      type: "buttons",
-      buttons: ["로또", "메뉴", "고양이"]
+      :type => "buttons",						# 이렇게 작성해도
+      buttons: ["로또", "메뉴", "고양이"]		 # 요렇게 작성해도 똑같습니다.
     }
     render json: @keyboard
   end
-  
+
   def message
     @user_msg = params[:content] # 사용자가 보낸 내용은 content에 담아서 전송됩니다.
     
